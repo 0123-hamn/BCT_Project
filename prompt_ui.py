@@ -21,7 +21,7 @@ template = load_prompt('email_generator_template.json')
 
 if st.button('Generate'):
 
-    chain = template|model
+    chain = template|model 
     result = chain.invoke({
         'sender_name':sender_name,
         'recipient_name':recipient_name,
